@@ -44,8 +44,8 @@ export const Home = () => {
         ></PageCard>
         <PageCard
           path="/job"
-          title="アルバイト・インターン"
-          text="これまでに経験したアルバイト等について紹介します！"
+          title="技術"
+          text="自分の持っている技術について紹介します！"
         ></PageCard>
       </div>
     </div>
