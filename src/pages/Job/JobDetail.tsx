@@ -32,7 +32,7 @@ export const JobDetail = () => {
       {!content && (
         <div className="flex flex-col items-center justify-center h-full">
           <div className="p-4 py-8">
-            <p>"{id}"のアルバイト・インターン情報は現在用意されていません🙇</p>
+            <p>"{id}"の技術情報は現在用意されていません🙇</p>
           </div>
         </div>
       )}

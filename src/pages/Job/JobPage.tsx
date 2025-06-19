@@ -27,6 +27,7 @@ export const JobPage = () => {
         技術
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-xl">
+        <PageCard path="detail/certification" title="資格" text="🎖️"></PageCard>
         <PageCard path="detail/digeon" title="Digeon" text="🐦"></PageCard>
         <PageCard
           path="detail/kobe-u-cmds"

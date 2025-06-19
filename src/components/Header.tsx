@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
                 趣味
               </Link>
               <Link to="/job" className="text-gray-700 hover:text-gray-900">
-                アルバイト
+                技術
               </Link>
             </div>
             <div className="md:hidden">
@@ -103,7 +103,7 @@ export const Header: React.FC = () => {
             to="/job"
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900"
           >
-            アルバイト
+            技術
           </Link>
         </div>
       )}
