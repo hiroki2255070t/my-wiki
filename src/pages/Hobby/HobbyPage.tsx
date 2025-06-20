@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const PageCard = ({
   path,
@@ -29,6 +29,7 @@ export const HobbyPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-xl">
         <PageCard path="detail/soccer" title="サッカー" text="⚽️"></PageCard>
         <PageCard path="detail/cycling" title="自転車" text="🚲"></PageCard>
+        <PageCard path="detail/sketch" title="絵描き" text="🎨"></PageCard>
       </div>
     </div>
   );

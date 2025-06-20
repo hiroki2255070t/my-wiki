@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { MarkdownViewer } from "../../components/MarkdownViewer";
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { MarkdownViewer } from '../../components/MarkdownViewer';
 
-const markdownModules = import.meta.glob("../../../docs/job/*.md", {
-  as: "raw",
+const markdownModules = import.meta.glob('../../../docs/job/*.md', {
+  as: 'raw',
 });
 
 export const JobDetail = () => {
   const [content, setContent] = useState<string | null>(null);
-  const id = useParams().id || "";
+  const id = useParams().id || '';
 
   useEffect(() => {
     const filePath = `../../../docs/job/${id}.md`;

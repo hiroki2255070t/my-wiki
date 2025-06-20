@@ -1,4 +1,4 @@
-import { FaSadTear } from "react-icons/fa";
+import { FaSadTear } from 'react-icons/fa';
 
 export const ErrorPage = ({ error }: { error: Error }) => {
   return (

@@ -1,0 +1,73 @@
+{
+  "book_list": [
+    {
+      "title": "サピエンス全史 - 文明の構造と人類の幸福",
+      "author": "Yuval Noah Harari",
+      "dateRead": "2025/06",
+      "ISBN": "9784309226712",
+      "tags": ["歴史", "哲学"]
+    },
+    {
+      "title": "コンピュータシステムの理論と実装 第2版 ―モダンなコンピュータの作り方",
+      "author": "Noam Nisan, Shimon Schocken",
+      "dateRead": "2025/5",
+      "ISBN": "9784814400874",
+      "tags": ["コンピュータサイエンス", "研究"]
+    },
+    {
+      "title": "機械学習エンジニアのためのTransformers",
+      "author": "Lewis Tunstall, Leandro von Werra, Thomas Wolf",
+      "dateRead": "2025/2",
+      "ISBN": "9784873119953",
+      "tags": ["機械学習", "LLM", "プログラミング"]
+    },
+    {
+      "title": "まったく新しいアカデミック・ライティングの教科書",
+      "author": "阿部幸大",
+      "dateRead": "2025/5",
+      "ISBN": "9784334103804",
+      "tags": ["論文", "研究"]
+    },
+    {
+      "title": "ロバストPython ― クリーンで保守しやすいコードを書く",
+      "author": "Patrick Viafore",
+      "dateRead": "2024/4",
+      "ISBN": "9784814400171",
+      "tags": ["プログラミング", "Python"]
+    },
+    {
+      "title": "AlphaZero 深層学習・強化学習・探索 人工知能プログラミング実践入門",
+      "author": "布留川 英一",
+      "dateRead": "2023/3",
+      "ISBN": "9784862464507",
+      "tags": ["Python", "機械学習", "プログラミング"]
+    },{
+      "title": "書く技術・伝える技術 : 仕事の効率をグンと上げるビジネス・ライティング",
+      "author": "倉島 保美",
+      "dateRead": "2024/4",
+      "ISBN": "9784866671482",
+      "tags": ["論文", "研究"]
+    },
+    {
+      "title": "ゼロから作るDeep Learning ― Pythonで学ぶディープラーニングの理論と実装",
+      "author": "斎藤 康毅",
+      "dateRead": "2022/9",
+      "ISBN": "9784873117584",
+      "tags": ["データサイエンス", "Python", "機械学習", "プログラミング"]
+    },
+    {
+      "title": "ゼロから作るDeep Learning ❹ ―強化学習編",
+      "author": "斎藤 康毅",
+      "dateRead": "2022/11",
+      "ISBN": "9784873119755",
+      "tags": ["データサイエンス", "Python", "機械学習", "プログラミング"]
+    },
+    {
+      "title": "リーダブルコード - より良いコードを書くためのシンプルで実践的なテクニック",
+      "author": "Dustin Boswell, Trevor Foucher",
+      "dateRead": "2023/8",
+      "ISBN": "9784873115658",
+      "tags": ["プログラミング"]
+    }
+  ]
+}

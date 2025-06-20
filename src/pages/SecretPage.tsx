@@ -1,18 +1,18 @@
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { auth } from "../libs/firebase/firebase-config";
-import { onAuthStateChanged } from "firebase/auth";
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../libs/firebase/firebase-config';
+import { onAuthStateChanged } from 'firebase/auth';
 
-import { useSecretList } from "../hooks/useSecretdata";
+import { useSecretList } from '../hooks/useSecretdata';
 
 export const SecretPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (!user || user.email !== "2255070t@gsuite.kobe-u.ac.jp") {
-        alert("You are unauthorized!");
-        navigate("/home");
+      if (!user || user.email !== '2255070t@gsuite.kobe-u.ac.jp') {
+        alert('You are unauthorized!');
+        navigate('/home');
       }
     });
 

@@ -1,16 +1,16 @@
-import { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
-import { Loading } from "../../components/Loading";
-import { ErrorPage } from "../ErrorPage";
-import { useBookList } from "../../hooks/useBooks";
+import { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { Loading } from '../../components/Loading';
+import { ErrorPage } from '../ErrorPage';
+import { useBookList } from '../../hooks/useBooks';
 
 function formatDateYM(dateStr: string): string {
-  const [year, month] = dateStr.split("/").map(Number);
+  const [year, month] = dateStr.split('/').map(Number);
   return `${year}年${month}月`;
 }
 
 function dateToSortableValue(dateStr: string): number {
-  const [year, month] = dateStr.split("/").map(Number);
+  const [year, month] = dateStr.split('/').map(Number);
   return year * 100 + month;
 }
 
@@ -53,8 +53,8 @@ export const Books = () => {
             key={index}
             className={`px-4 py-2 rounded border border-gray-300 transition-colors ${
               filterTags.includes(tag)
-                ? "bg-blue-500 text-white"
-                : "bg-white text-gray-800 hover:bg-gray-100"
+                ? 'bg-blue-500 text-white'
+                : 'bg-white text-gray-800 hover:bg-gray-100'
             }`}
             onClick={() => toggleTag(tag)}
           >
@@ -68,7 +68,7 @@ export const Books = () => {
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           onClick={() => setSortAsc(!sortAsc)}
         >
-          日付でソート ({sortAsc ? "昇順" : "降順"})
+          日付でソート ({sortAsc ? '昇順' : '降順'})
         </button>
       </div>
 
@@ -85,7 +85,7 @@ export const Books = () => {
                 読んだ日付: {formatDateYM(book.dateRead)}
               </div>
               <div className="text-gray-700">ISBN: {book.ISBN}</div>
-              <div className="text-gray-700">タグ: {book.tags.join(", ")}</div>
+              <div className="text-gray-700">タグ: {book.tags.join(', ')}</div>
             </div>
           </Link>
         </div>

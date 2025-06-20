@@ -1,8 +1,8 @@
-import { generateEmbedding } from "../libs/huggingface/extractor";
-import { DocumentEmbedding } from "../types/documentEmbedding";
+import { generateEmbedding } from '../libs/huggingface/extractor';
+import { DocumentEmbedding } from '../types/documentEmbedding';
 
-const markdownModules = import.meta.glob("../../docs/*/*.md", {
-  as: "raw",
+const markdownModules = import.meta.glob('../../docs/*/*.md', {
+  as: 'raw',
 });
 
 export const generateDocumentEmbeddings = async (): Promise<
@@ -15,10 +15,10 @@ export const generateDocumentEmbeddings = async (): Promise<
       try {
         const content = await loadContent();
         const embedding = await generateEmbedding(content);
-        return { path: path.replace("../../docs/", ""), embedding };
+        return { path: path.replace('../../docs/', ''), embedding };
       } catch (error) {
         console.error(
-          `Embedding failed for ${path.replace("../../docs/", "")}:`,
+          `Embedding failed for ${path.replace('../../docs/', '')}:`,
           error
         );
         return null;

@@ -1,5 +1,8 @@
-import { useState, useEffect } from "react";
-import { getSecretData, getSecretList } from "../libs/firebase/firestore/secrets";
+import { useState, useEffect } from 'react';
+import {
+  getSecretData,
+  getSecretList,
+} from '../libs/firebase/firestore/secrets';
 
 export function useSecretData(id: string) {
   const [data, setData] = useState<any>(null);
