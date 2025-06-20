@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { useEmbedding } from "../hooks/useEmbedding";
-import { Loading } from "../components/Loading";
-import { ErrorPage } from "./ErrorPage";
-import { generateDocumentEmbeddings } from "../function/generateDocumentEmbeddings";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useEmbedding } from '../hooks/useEmbedding';
+import { Loading } from '../components/Loading';
+import { ErrorPage } from './ErrorPage';
+import { generateDocumentEmbeddings } from '../function/generateDocumentEmbeddings';
 
 function cosineSimilarity(a: number[], b: number[]) {
   const dot = a.reduce((sum, ai, i) => sum + ai * b[i], 0);
@@ -13,8 +13,8 @@ function cosineSimilarity(a: number[], b: number[]) {
 }
 
 export const Search = () => {
-  const [text, setText] = useState("");
-  const [debouncedText, setDebouncedText] = useState("");
+  const [text, setText] = useState('');
+  const [debouncedText, setDebouncedText] = useState('');
   const [topDocs, setTopDocs] = useState<string[]>([]);
   const [docLoading, setDocLoading] = useState(false);
 
@@ -101,11 +101,11 @@ export const Search = () => {
           </h1>
           <ul className="list-none ml-5 space-y-2">
             {topDocs.map((path, index) => {
-              const [subPath, filename] = path.split("/");
+              const [subPath, filename] = path.split('/');
               return (
                 <Link
                   key={index}
-                  to={`/${subPath}/detail/${filename.replace(".md", "")}`}
+                  to={`/${subPath}/detail/${filename.replace('.md', '')}`}
                   className=""
                 >
                   <div className="flex items-center border border-gray-100 rounded-lg p-4 transition-colors hover:bg-gray-100 cursor-pointer shadow-md m-4">

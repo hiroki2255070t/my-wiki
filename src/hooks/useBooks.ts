@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { getBookList } from "../libs/firebase/firestore/books";
-import { Book } from "../types/book";
+import { useState, useEffect } from 'react';
+import { getBookList } from '../libs/firebase/firestore/books';
+import { Book } from '../types/book';
 
 export const useBookList = () => {
   const [data, setData] = useState<Book[]>([]);
@@ -23,4 +23,4 @@ export const useBookList = () => {
   }, []);
 
   return { data, loading, error };
-}
+};

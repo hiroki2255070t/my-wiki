@@ -1,7 +1,7 @@
-import { Loading } from "../components/Loading";
-import { ErrorPage } from "./ErrorPage";
-import { useHistoryList } from "../hooks/useHistory";
-import { History } from "../types/history";
+import { Loading } from '../components/Loading';
+import { ErrorPage } from './ErrorPage';
+import { useHistoryList } from '../hooks/useHistory';
+import { History } from '../types/history';
 
 const sortHistoryList = (historyList: History[]): History[] => {
   return historyList.sort((a, b) => {

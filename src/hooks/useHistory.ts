@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { getHistoryList } from "../libs/firebase/firestore/history";
-import { History } from "../types/history";
+import { useState, useEffect } from 'react';
+import { getHistoryList } from '../libs/firebase/firestore/history';
+import { History } from '../types/history';
 
 export function useHistoryList() {
   const [data, setData] = useState<History[]>([]);

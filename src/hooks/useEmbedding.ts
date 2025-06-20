@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { generateEmbedding } from "../libs/huggingface/extractor";
+import { useEffect, useState } from 'react';
+import { generateEmbedding } from '../libs/huggingface/extractor';
 
 export const useEmbedding = ({ text }: { text: string }) => {
   const [data, setData] = useState<number[] | null>(null);
