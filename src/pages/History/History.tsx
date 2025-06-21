@@ -1,7 +1,7 @@
-import { Loading } from '../components/Loading';
-import { ErrorPage } from './ErrorPage';
-import { useHistoryList } from '../hooks/useHistory';
-import { History } from '../types/history';
+import { Loading } from '../../components/Loading';
+import { ErrorPage } from '../ErrorPage';
+import { useHistoryList } from '../../hooks/useHistory';
+import { History } from '../../types/history';
 
 const sortHistoryList = (historyList: History[]): History[] => {
   return historyList.sort((a, b) => {
@@ -36,7 +36,7 @@ export const HistoryPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-start py-12 px-4">
-      <h1 className="text-4xl font-bold text-gray-800 mb-6">歴史</h1>
+      <h1 className="text-4xl font-bold text-gray-800 mb-6">経歴</h1>
       <div className="w-2/3 max-w-2xl space-y-4">
         {sortHistoryList(data).map((item) => (
           <Event history={item}></Event>

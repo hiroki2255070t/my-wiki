@@ -6,7 +6,7 @@ import { Login } from './pages/Login.tsx';
 import { Home } from './pages/Home.tsx';
 import { Header } from './components/Header.tsx';
 import { Search } from './pages/Search.tsx';
-import { HistoryPage } from './pages/History.tsx';
+import { HistoryPage } from './pages/History/History.tsx';
 import { JobPage } from './pages/Job/JobPage.tsx';
 import { JobDetail } from './pages/Job/JobDetail.tsx';
 import { Books } from './pages/Book/Books.tsx';
