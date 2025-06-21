@@ -4,14 +4,18 @@ env.allowLocalModels = false;
 let extractor: any = null;
 let initializationPromise: Promise<void> | null = null;
 
-export async function initializeExtractor(progress_callback?: (data: any) => void) {
+export async function initializeExtractor(
+  progress_callback?: (data: any) => void
+) {
   if (extractor) {
     console.log('Extractor has already initialized and is ready.');
     return;
   }
 
   if (initializationPromise) {
-    console.log('Extractor initialization is already in progress. Waiting for it to complete...');
+    console.log(
+      'Extractor initialization is already in progress. Waiting for it to complete...'
+    );
     return initializationPromise;
   }
 
@@ -25,9 +29,13 @@ export async function initializeExtractor(progress_callback?: (data: any) => voi
     const model = 'Xenova/all-MiniLM-L6-v2';
 
     try {
-      console.log('Starting Extractor initialization (downloading model if necessary)...');
+      console.log(
+        'Starting Extractor initialization (downloading model if necessary)...'
+      );
 
-      extractor = await pipeline(task, model, { progress_callback: progress_callback || console.log });
+      extractor = await pipeline(task, model, {
+        progress_callback: progress_callback || console.log,
+      });
       console.log('Extractor initialized successfully!');
     } catch (error) {
       console.error('Failed to initialize Extractor:', error);
@@ -42,7 +50,9 @@ export async function initializeExtractor(progress_callback?: (data: any) => voi
 
 export async function generateEmbedding(text: string): Promise<number[]> {
   if (!extractor) {
-    console.log('Extractor not yet available. Triggering/Waiting for initialization...');
+    console.log(
+      'Extractor not yet available. Triggering/Waiting for initialization...'
+    );
     await initializeExtractor(); // progress_callbackなしで呼び出される場合がある
   }
 

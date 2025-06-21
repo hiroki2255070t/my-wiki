@@ -7,7 +7,8 @@ const markdownModules = import.meta.glob('../../docs/books/*.md', {
 
 // ドキュメント埋め込みのキャッシュを保存するグローバル変数
 let cachedDocumentEmbeddings: DocumentEmbedding[] | null = null;
-let documentEmbeddingsLoadingPromise: Promise<DocumentEmbedding[]> | null = null;
+let documentEmbeddingsLoadingPromise: Promise<DocumentEmbedding[]> | null =
+  null;
 
 export const generateDocumentEmbeddings = async (): Promise<
   DocumentEmbedding[]
