@@ -4,10 +4,10 @@
 
 ここでは以下のセクションをご覧いただけます。
 
-**経歴**: これまでの私の歩み. 
-**趣味**: 私のパーソナルな側面. 
-**技術**: 私が持つスキルと専門知識. 
-**読書記録**: 私が読んだ書籍とその学び. 
+**経歴**: これまでの私の歩み.  
+**趣味**: 私のパーソナルな側面.  
+**技術**: 私が持つスキルと専門知識.  
+**読書記録**: 私が読んだ書籍とその学び.  
 
 ## 主要機能
 
@@ -30,11 +30,11 @@
 
 このアプリケーションは以下の技術を使用して構築されています。
 
-**TypeScript**: 型安全なJavaScriptを実現. 
-**React**: UI構築のための宣言的なJavaScriptライブラリ. 
-**Tailwind CSS**: CSSフレームワーク. 
-**Firebase**: バックエンドサービス（認証、データベース、ホスティングなど）を担当. 
-**@xenova/transformers**: ブラウザ上でHugging FaceのAIモデルを実行し、ベクトル埋め込みを生成. 
+**TypeScript**: 型安全なJavaScriptを実現.  
+**React**: UI構築のための宣言的なJavaScriptライブラリ.  
+**Tailwind CSS**: CSSフレームワーク.  
+**Firebase**: バックエンドサービス（認証、データベース、ホスティングなど）を担当.  
+**@xenova/transformers**: ブラウザ上でHugging FaceのAIモデルを実行し、ベクトル埋め込みを生成.  
 
 ## ホームページのURL
 [https://sample-b023e.firebaseapp.com/](https://sample-b023e.firebaseapp.com/)
