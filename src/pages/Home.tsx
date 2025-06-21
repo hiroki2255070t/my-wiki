@@ -30,22 +30,22 @@ export const Home = () => {
         <PageCard
           path="/history"
           title="経歴"
-          text="これまでにやってきたことを紹介します！"
+          text="私の経歴を紹介します！"
         ></PageCard>
         <PageCard
           path="/books"
           title="本"
-          text="おすすめの書籍や読書記録をまとめています！"
+          text="私の読書記録を紹介します！"
         ></PageCard>
         <PageCard
           path="/hobby"
           title="趣味"
-          text="自分の趣味を紹介します！"
+          text="私の趣味を紹介します！"
         ></PageCard>
         <PageCard
           path="/job"
           title="技術"
-          text="自分の持っている技術について紹介します！"
+          text="私の技術を紹介します！"
         ></PageCard>
       </div>
     </div>
