@@ -19,7 +19,7 @@ export const Books = () => {
 
   const allTags = Array.from(new Set(data.flatMap((book) => book.tags)));
   const [filterTags, setFilterTags] = useState<string[]>([]);
-  const [sortAsc, setSortAsc] = useState(true);
+  const [sortDec, setSortDec] = useState(true);
 
   const toggleTag = (tag: string) => {
     setFilterTags((prev) =>
@@ -37,16 +37,16 @@ export const Books = () => {
     return filtered.sort((a, b) => {
       const dateA = dateToSortableValue(a.dateRead);
       const dateB = dateToSortableValue(b.dateRead);
-      return sortAsc ? dateA - dateB : dateB - dateA;
+      return sortDec ? dateB - dateA : dateA - dateB;
     });
-  }, [data, filterTags, sortAsc]);
+  }, [data, filterTags, sortDec]);
 
   if (loading) return <Loading></Loading>;
   if (error) return <ErrorPage error={error}></ErrorPage>;
 
   return (
     <div className="relative p-4 space-y-4 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold">読んだ本リスト</h1>
+      <h1 className="text-2xl font-bold">読書記録</h1>
       <div className="flex flex-wrap gap-2">
         {allTags.map((tag, index) => (
           <button
@@ -66,9 +66,9 @@ export const Books = () => {
       <div>
         <button
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-          onClick={() => setSortAsc(!sortAsc)}
+          onClick={() => setSortDec(!sortDec)}
         >
-          日付でソート ({sortAsc ? '昇順' : '降順'})
+          日付でソート ({sortDec ? '降順' : '昇順'})
         </button>
       </div>
 
