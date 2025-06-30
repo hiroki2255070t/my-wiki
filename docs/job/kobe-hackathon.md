@@ -26,10 +26,10 @@
 
 自分は、**シフト・出退勤管理アプリ**を開発しました。このアプリでは、データベースに登録されたシフトや、出退勤の記録を確認することができます。
 
-<p style="text-align: center;">
-<img src="/img/job/kobe-hackathon/work_shift.jpg" width="200" style="margin-left: 10px; margin-right: 10px;">
-<img src="/img/job/kobe-hackathon/attendance_record.jpg" width="200" style="margin-left: 10px; margin-right: 10px;">
-</p>
+<div class="text-center">
+    <img src="/img/job/kobe-hackathon/work_shift.jpg" alt="" width="200" class="inline-block mx-2">
+    <img src="/img/job/kobe-hackathon/attendance_record.jpg" alt="本の表紙" width="200" class="inline-block mx-2">
+</div>
 
 
 <p class="text-center">シフト・出退勤管理アプリ</p>
