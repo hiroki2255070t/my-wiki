@@ -34,6 +34,11 @@ export const JobPage = () => {
           title="神戸データサイエンス操練所"
           text="⚓️"
         ></PageCard>
+        <PageCard
+          path="detail/kobe-hackathon"
+          title="ハッカソン"
+          text="🏃"
+        ></PageCard>
       </div>
     </div>
   );
